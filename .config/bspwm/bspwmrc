@@ -1,0 +1,13 @@
+!/bin/sh
+bspc config border_width 4
+bspc config focused_border_color "#89b4fa"
+bspc config normal_border_color "#313244"
+bspc config focus_follows_pointer true
+bspc config automatic_scheme alternate
+bspc config window_gap 10
+
+export XCURSOR_THEME=Bibata-Modern-Classic &
+polybar &
+picom --config ~/.config/picom/picom.conf &
+~/.config/bspwm/wall.sh &
+~/.screenlayout/monitors.sh &
