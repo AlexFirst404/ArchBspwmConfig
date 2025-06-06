@@ -1,0 +1,96 @@
+@theme "~/.config/rofi/mocha.rasi"
+
+* {
+  font: "JetBrainsMono Nerd Font 18";
+  icon-theme: "Papirus-Dark";
+  location: 0;
+  columns: 2;
+  lines: 8;
+  text-color: @text;
+  background-color: @base;
+  border-color: @surface1;
+  selected-normal-background: @surface0;
+  selected-normal-foreground: @text;
+  selected-active-background: @accent;
+  selected-active-foreground: @base;
+  selected-urgent-foreground: @base;
+  selected-urgent-background: @red;
+  hide-scrollbar: true;
+  sidebar-mode: true;
+}
+
+configuration {
+  drun-display-format: "{icon} {name}";
+
+  show-icon: true;
+  display-drun: "   Apps ";
+  display-run: "   Run ";
+  display-window: "   Win";
+  display-ssh : " 󰌘  SSH ";
+  display-Network: "󰤨  Network";
+  modi: "drun,run,ssh,window";
+
+  sidebar-mode: true;
+}
+
+
+window {
+  transparency: "real";
+  location: center;
+  width: 700;
+  border: 2;
+  border-radius: 12;
+  padding: 20;
+}
+
+mainbox {
+  background-color: inherit;
+  padding: 10;
+}
+
+element-icon {
+  size: 25px;
+}
+
+
+element {
+  border: 0;
+  padding: 3 16;
+  background-color: transparent;
+  text-color: @text;
+}
+
+element selected {
+  text-color: @rosewater;
+  border: 2;
+  border-color: @rosewater;
+  border-radius: 6;
+}
+
+element-text {
+  text-color: inherit;
+  vertical-align: 0.5;
+}
+
+listview {
+  margin: 20 0 0 0;
+}
+
+mode-switcher {
+  padding: 20 0 10 0;  // top right bottom left
+  spacing: 8;
+}
+
+button {
+  padding: 6 0;
+  text-color: @text;
+  background-color: transparent;
+  border: 0;
+  spacing: 6;
+}
+
+button selected {
+  background-color: @lavender;
+  text-color: @base;
+  border-radius: 6;
+}
